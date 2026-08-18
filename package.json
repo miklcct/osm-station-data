@@ -1,0 +1,34 @@
+{
+  "name": "osm-station-data",
+  "version": "0.0.1",
+  "description": "Fetch GB rail station data from OpenStreetMap",
+  "license" : "MIT",
+  "homepage": "https://miklcct.github.io/osm-station-data/",
+  "repository": "https://github.com/miklcct/osm-station-data",
+  "keywords" : ["osm", "openstreetmap", "rail", "naptan", "crs"],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build_site": "tsc && vite build --config vite.config.site.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22",
+    "@types/multimap": "^1.1.4",
+    "@types/node": "^26.2.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vite-plugin-dts": "^5.0.3"
+  },
+  "dependencies": {
+    "@derhuerst/query-overpass": "^2.0.1",
+    "@turf/point-on-feature": "^7.4.0",
+    "leaflet": "^1.9.4",
+    "multimap": "^1.1.0",
+    "osmtogeojson": "^3.0.0-beta.5"
+  },
+  "files" : ["dist"]
+}
